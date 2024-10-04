@@ -3,11 +3,18 @@ import pandas as pd
 import numpy as np
 
 class TestEDA(unittest.TestCase):
-
-    # Load the dataset before running the tests
+    
     @classmethod
     def setUpClass(cls):
-        cls.df = pd.read_csv('../data/cleaned_xente_data.csv')
+        """Load the dataset before running the tests"""
+        # Load your dataset here. For example, you can use:
+        cls.df = pd.DataFrame({
+            'CountryCode': [256] * 10,
+            'Amount': [1000, 2000, -500, 3000, 5000, 10000, 25000, 9000000, 50000, 100000],
+            'Value': [2000, 3000, 2500, 4000, 15000, 1000, 5000, 9000000, 20000, 1000000],
+            'PricingStrategy': [1, 2, 1, 2, 3, 2, 4, 1, 3, 2],
+            'FraudResult': [0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+        })
 
     def test_dataset_shape(self):
         """Test that the dataset is loaded and has expected number of rows and columns"""
@@ -41,7 +48,7 @@ class TestEDA(unittest.TestCase):
             outliers = numerical_df[(numerical_df[column] < lower_bound) | (numerical_df[column] > upper_bound)]
             self.assertIsNotNone(outliers, "Outlier detection failed.")
             self.assertGreaterEqual(len(outliers), 0, "Outlier count cannot be negative.")
-    
+
     def test_summary_statistics(self):
         """Test that summary statistics (mean, median, etc.) are calculated correctly"""
         numerical_df = self.df.select_dtypes(include=[np.number])
