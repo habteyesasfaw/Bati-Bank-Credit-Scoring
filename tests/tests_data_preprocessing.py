@@ -55,8 +55,6 @@ class TestEDA(unittest.TestCase):
         np.testing.assert_array_equal(np.diag(corr_matrix.values), [1.0, 1.0])
 
     def test_data_types(self):
-        """Test if data types are correct for specific columns"""
-        # Assert that TransactionId is an object (string)
         self.assertEqual(self.df['TransactionId'].dtype, object)
         # Assert that Amount is an integer/float
         self.assertTrue(np.issubdtype(self.df['Amount'].dtype, np.number))
