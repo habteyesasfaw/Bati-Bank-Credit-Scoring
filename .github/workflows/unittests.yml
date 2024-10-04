@@ -1,9 +1,9 @@
-name: Run Tests
+name: CI
 
 on:
   push:
-    branches: 
-      - main
+    branches:
+      - test-1
   pull_request:
     branches:
       - main
@@ -11,22 +11,20 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.8'  # Specify your Python version
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-
-      - name: Run data preprocessing
-        run: |
-          python -m your_data_processing_script  # Adjust this to your actual script
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Adjust if necessary
 
       - name: Run tests
         run: |
