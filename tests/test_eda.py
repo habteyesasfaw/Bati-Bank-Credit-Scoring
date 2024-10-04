@@ -6,8 +6,8 @@ class TestEDA(unittest.TestCase):
 
     # Load the dataset before running the tests
     @classmethod
-    # def setUpClass(cls):
-    #     cls.df = pd.read_csv('../data/cleaned_xente_data.csv')
+    def setUpClass(cls):
+        cls.df = pd.read_csv('../data/cleaned_xente_data.csv')
 
     def test_dataset_shape(self):
         """Test that the dataset is loaded and has expected number of rows and columns"""
