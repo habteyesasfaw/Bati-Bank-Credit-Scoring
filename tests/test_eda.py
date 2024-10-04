@@ -6,16 +6,14 @@ class TestEDA(unittest.TestCase):
 
     # Load the dataset before running the tests
     @classmethod
-    # def setUpClass(cls):
-    #     cls.df = pd.read_csv('../data/cleaned_xente_data.csv')
+    def setUpClass(cls):
+        cls.df = pd.read_csv('../data/cleaned_xente_data.csv')
 
     def test_dataset_shape(self):
         """Test that the dataset is loaded and has expected number of rows and columns"""
         self.assertIsNotNone(self.df)
         self.assertGreater(self.df.shape[0], 0, "The dataset should have rows.")
         self.assertGreater(self.df.shape[1], 0, "The dataset should have columns.")
-
-    
 
     def test_missing_values(self):
         """Test that missing values are correctly identified"""
