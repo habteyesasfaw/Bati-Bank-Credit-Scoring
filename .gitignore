@@ -13,7 +13,7 @@ venv/
 
 # Data files
 data/
-*.csv
+# *.csv
 *.json
 *.xlsx
 
