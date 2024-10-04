@@ -1,11 +1,39 @@
+# Data manipulation
 pandas
 numpy
+
+# Visualization
 matplotlib
 seaborn
-scikit-learn
-plotly
+
+# Statistical modeling and analysis
+scipy
 statsmodels
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
+
+# Feature engineering
+xverse
+category_encoders
+
+# Weight of Evidence (WoE) and Information Value (IV)
+woe
+
+# API development (FastAPI framework)
+fastapi
+
+# ASGI server for serving FastAPI
+uvicorn
+
+# Model serving and utilities
+joblib
+pydantic
+
+# Testing and utilities
+pytest
+
+# Jupyter for notebook usage
 jupyterlab
-python-dateutil
-logging
-notebook
