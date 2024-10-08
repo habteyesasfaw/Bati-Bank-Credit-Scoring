@@ -50,22 +50,21 @@ To get a local copy up and running, follow these steps:
 
 ## Project Structure
 ```
-bati-bank-credit-scoring/
-│
 ├── data/
-│   ├── transactions_data.csv               # Original dataset
-│   ├── cleaned_data.csv                    # Cleaned dataset after preprocessing
+│   ├── data.csv          # Original dataset
+│   ├── cleaned_xente_data.csv             # Cleaned dataset after preprocessing
+│   ├── feature_engineered_data.csv        # Dataset after feature engineering
 │
 ├── notebooks/
-│   ├── 01_data_preprocessing.ipynb        # Data preprocessing
-│   ├── 02_exploratory_data_analysis.ipynb  # Exploratory Data Analysis
-│   ├── 03_feature_engineering.ipynb        # Feature Engineering
-│   ├── 04_credit_scoring_model.ipynb       # Credit Scoring Model Development
-│   └── 05_model_serving_api.ipynb          # Model serving with FastAPI
+│   ├── 01_data_preprocessing_and_loading.ipynb  # Data preprocessing and loading
+│   ├── 02_exploratory_data_analysis.ipynb       # Exploratory Data Analysis
+│   ├── 03_feature_engineering.ipynb              # Feature Engineering
+│   ├── 04_modelling.ipynb                         # Modelling
+│   └── 05_model_serving_api.ipynb                # Model serving with FastAPI
 │
-├── requirements.txt                         # List of required packages
-├── best_model.pkl                           # Trained machine learning model
-└── README.md                                # Project documentation
+├── requirements.txt                             # List of required packages
+├── best_model.pkl                               # Trained machine learning model
+└── README.md                                    # Project documentation                           
 ```
 
 ## Tasks
