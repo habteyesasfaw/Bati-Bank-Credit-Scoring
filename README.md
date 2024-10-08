@@ -2,11 +2,9 @@
 
 
 # Bati Bank Credit Scoring Model
-```
 
-```
 ## Table of Contents
-```
+
 ```
 - [Overview](#overview)
 - [Business Need](#business-need)
@@ -16,7 +14,7 @@
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-
+```
 ## Overview
 
 Bati Bank, a leading financial service provider with over 10 years of experience, is partnering with a successful eCommerce company to enable a buy-now-pay-later service. This project focuses on creating a Credit Scoring Model using data provided by the eCommerce platform, allowing customers to purchase products on credit based on their creditworthiness.
