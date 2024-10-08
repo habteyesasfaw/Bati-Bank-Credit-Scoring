@@ -20,8 +20,8 @@
 Bati Bank, a leading financial service provider with over 10 years of experience, is partnering with a successful eCommerce company to enable a buy-now-pay-later service. This project focuses on creating a Credit Scoring Model using data provided by the eCommerce platform, allowing customers to purchase products on credit based on their creditworthiness.
 
 ```
-## Business Need
 ```
+## Business Need
 
 Credit scoring is essential for assessing potential borrowers and estimating the likelihood of default. This project aims to:
 1. Define a proxy variable to categorize users as high risk (bad) or low risk (good).
