@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Bati Bank Credit Scoring Model
 ```
 
@@ -89,7 +89,8 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
 
-### Instructions
+### Instruction
+```
 1. Replace `yourusername` in the clone URL with your actual GitHub username.
 2. Update the dataset links with the correct URLs.
 3. Add more sections if needed, such as "Examples" for how to use the API.
